@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C0BF188252E08C800225782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0BF187252E08C800225782 /* AppDelegate.swift */; };
+		8C0BF18A252E08C800225782 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0BF189252E08C800225782 /* SceneDelegate.swift */; };
+		8C0BF18C252E08C800225782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0BF18B252E08C800225782 /* ViewController.swift */; };
+		8C0BF18F252E08C800225782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C0BF18D252E08C800225782 /* Main.storyboard */; };
+		8C0BF191252E08CA00225782 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C0BF190252E08CA00225782 /* Assets.xcassets */; };
+		8C0BF194252E08CA00225782 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C0BF192252E08CA00225782 /* LaunchScreen.storyboard */; };
+		8C0BF199252E08CA00225782 /* SalavatCounter WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8C0BF198252E08CA00225782 /* SalavatCounter WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8C0BF19F252E08CA00225782 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C0BF19D252E08CA00225782 /* Interface.storyboard */; };
+		8C0BF1A1252E08CB00225782 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C0BF1A0252E08CB00225782 /* Assets.xcassets */; };
+		8C0BF1A8252E08CB00225782 /* SalavatCounter WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8C0BF1A7252E08CB00225782 /* SalavatCounter WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8C0BF1AD252E08CB00225782 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0BF1AC252E08CB00225782 /* InterfaceController.swift */; };
+		8C0BF1AF252E08CB00225782 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0BF1AE252E08CB00225782 /* ExtensionDelegate.swift */; };
+		8C0BF1B1252E08CB00225782 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0BF1B0252E08CB00225782 /* NotificationController.swift */; };
+		8C0BF1B3252E08CB00225782 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0BF1B2252E08CB00225782 /* ComplicationController.swift */; };
+		8C0BF1B5252E08CC00225782 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C0BF1B4252E08CC00225782 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8C0BF19A252E08CA00225782 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C0BF17C252E08C800225782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C0BF197252E08CA00225782;
+			remoteInfo = "SalavatCounter WatchKit App";
+		};
+		8C0BF1A9252E08CB00225782 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C0BF17C252E08C800225782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C0BF1A6252E08CB00225782;
+			remoteInfo = "SalavatCounter WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8C0BF1BD252E08CC00225782 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8C0BF1A8252E08CB00225782 /* SalavatCounter WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C0BF1C1252E08CC00225782 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				8C0BF199252E08CA00225782 /* SalavatCounter WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8C0BF184252E08C800225782 /* SalavatCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SalavatCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C0BF187252E08C800225782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8C0BF189252E08C800225782 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8C0BF18B252E08C800225782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8C0BF18E252E08C800225782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8C0BF190252E08CA00225782 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C0BF193252E08CA00225782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8C0BF195252E08CA00225782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C0BF198252E08CA00225782 /* SalavatCounter WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SalavatCounter WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C0BF19E252E08CA00225782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		8C0BF1A0252E08CB00225782 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C0BF1A2252E08CB00225782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C0BF1A7252E08CB00225782 /* SalavatCounter WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SalavatCounter WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C0BF1AC252E08CB00225782 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		8C0BF1AE252E08CB00225782 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		8C0BF1B0252E08CB00225782 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		8C0BF1B2252E08CB00225782 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		8C0BF1B4252E08CC00225782 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C0BF1B6252E08CC00225782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C0BF1B7252E08CC00225782 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C0BF181252E08C800225782 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C0BF1A4252E08CB00225782 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C0BF17B252E08C800225782 = {
+			isa = PBXGroup;
+			children = (
+				8C0BF186252E08C800225782 /* SalavatCounter */,
+				8C0BF19C252E08CA00225782 /* SalavatCounter WatchKit App */,
+				8C0BF1AB252E08CB00225782 /* SalavatCounter WatchKit Extension */,
+				8C0BF185252E08C800225782 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8C0BF185252E08C800225782 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C0BF184252E08C800225782 /* SalavatCounter.app */,
+				8C0BF198252E08CA00225782 /* SalavatCounter WatchKit App.app */,
+				8C0BF1A7252E08CB00225782 /* SalavatCounter WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C0BF186252E08C800225782 /* SalavatCounter */ = {
+			isa = PBXGroup;
+			children = (
+				8C0BF187252E08C800225782 /* AppDelegate.swift */,
+				8C0BF189252E08C800225782 /* SceneDelegate.swift */,
+				8C0BF18B252E08C800225782 /* ViewController.swift */,
+				8C0BF18D252E08C800225782 /* Main.storyboard */,
+				8C0BF190252E08CA00225782 /* Assets.xcassets */,
+				8C0BF192252E08CA00225782 /* LaunchScreen.storyboard */,
+				8C0BF195252E08CA00225782 /* Info.plist */,
+			);
+			path = SalavatCounter;
+			sourceTree = "<group>";
+		};
+		8C0BF19C252E08CA00225782 /* SalavatCounter WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				8C0BF19D252E08CA00225782 /* Interface.storyboard */,
+				8C0BF1A0252E08CB00225782 /* Assets.xcassets */,
+				8C0BF1A2252E08CB00225782 /* Info.plist */,
+			);
+			path = "SalavatCounter WatchKit App";
+			sourceTree = "<group>";
+		};
+		8C0BF1AB252E08CB00225782 /* SalavatCounter WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8C0BF1AC252E08CB00225782 /* InterfaceController.swift */,
+				8C0BF1AE252E08CB00225782 /* ExtensionDelegate.swift */,
+				8C0BF1B0252E08CB00225782 /* NotificationController.swift */,
+				8C0BF1B2252E08CB00225782 /* ComplicationController.swift */,
+				8C0BF1B4252E08CC00225782 /* Assets.xcassets */,
+				8C0BF1B6252E08CC00225782 /* Info.plist */,
+				8C0BF1B7252E08CC00225782 /* PushNotificationPayload.apns */,
+			);
+			path = "SalavatCounter WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C0BF183252E08C800225782 /* SalavatCounter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C0BF1C2252E08CC00225782 /* Build configuration list for PBXNativeTarget "SalavatCounter" */;
+			buildPhases = (
+				8C0BF180252E08C800225782 /* Sources */,
+				8C0BF181252E08C800225782 /* Frameworks */,
+				8C0BF182252E08C800225782 /* Resources */,
+				8C0BF1C1252E08CC00225782 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C0BF19B252E08CA00225782 /* PBXTargetDependency */,
+			);
+			name = SalavatCounter;
+			productName = SalavatCounter;
+			productReference = 8C0BF184252E08C800225782 /* SalavatCounter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8C0BF197252E08CA00225782 /* SalavatCounter WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C0BF1BE252E08CC00225782 /* Build configuration list for PBXNativeTarget "SalavatCounter WatchKit App" */;
+			buildPhases = (
+				8C0BF196252E08CA00225782 /* Resources */,
+				8C0BF1BD252E08CC00225782 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C0BF1AA252E08CB00225782 /* PBXTargetDependency */,
+			);
+			name = "SalavatCounter WatchKit App";
+			productName = "SalavatCounter WatchKit App";
+			productReference = 8C0BF198252E08CA00225782 /* SalavatCounter WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		8C0BF1A6252E08CB00225782 /* SalavatCounter WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C0BF1BA252E08CC00225782 /* Build configuration list for PBXNativeTarget "SalavatCounter WatchKit Extension" */;
+			buildPhases = (
+				8C0BF1A3252E08CB00225782 /* Sources */,
+				8C0BF1A4252E08CB00225782 /* Frameworks */,
+				8C0BF1A5252E08CB00225782 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SalavatCounter WatchKit Extension";
+			productName = "SalavatCounter WatchKit Extension";
+			productReference = 8C0BF1A7252E08CB00225782 /* SalavatCounter WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C0BF17C252E08C800225782 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					8C0BF183252E08C800225782 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					8C0BF197252E08CA00225782 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					8C0BF1A6252E08CB00225782 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 8C0BF17F252E08C800225782 /* Build configuration list for PBXProject "SalavatCounter" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8C0BF17B252E08C800225782;
+			productRefGroup = 8C0BF185252E08C800225782 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C0BF183252E08C800225782 /* SalavatCounter */,
+				8C0BF197252E08CA00225782 /* SalavatCounter WatchKit App */,
+				8C0BF1A6252E08CB00225782 /* SalavatCounter WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C0BF182252E08C800225782 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C0BF194252E08CA00225782 /* LaunchScreen.storyboard in Resources */,
+				8C0BF191252E08CA00225782 /* Assets.xcassets in Resources */,
+				8C0BF18F252E08C800225782 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C0BF196252E08CA00225782 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C0BF1A1252E08CB00225782 /* Assets.xcassets in Resources */,
+				8C0BF19F252E08CA00225782 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C0BF1A5252E08CB00225782 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C0BF1B5252E08CC00225782 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C0BF180252E08C800225782 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C0BF18C252E08C800225782 /* ViewController.swift in Sources */,
+				8C0BF188252E08C800225782 /* AppDelegate.swift in Sources */,
+				8C0BF18A252E08C800225782 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C0BF1A3252E08CB00225782 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C0BF1B1252E08CB00225782 /* NotificationController.swift in Sources */,
+				8C0BF1B3252E08CB00225782 /* ComplicationController.swift in Sources */,
+				8C0BF1AF252E08CB00225782 /* ExtensionDelegate.swift in Sources */,
+				8C0BF1AD252E08CB00225782 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8C0BF19B252E08CA00225782 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C0BF197252E08CA00225782 /* SalavatCounter WatchKit App */;
+			targetProxy = 8C0BF19A252E08CA00225782 /* PBXContainerItemProxy */;
+		};
+		8C0BF1AA252E08CB00225782 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C0BF1A6252E08CB00225782 /* SalavatCounter WatchKit Extension */;
+			targetProxy = 8C0BF1A9252E08CB00225782 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8C0BF18D252E08C800225782 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C0BF18E252E08C800225782 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8C0BF192252E08CA00225782 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C0BF193252E08CA00225782 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8C0BF19D252E08CA00225782 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C0BF19E252E08CA00225782 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8C0BF1B8252E08CC00225782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8C0BF1B9252E08CC00225782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		8C0BF1BB252E08CC00225782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 887F78F523;
+				INFOPLIST_FILE = "SalavatCounter WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.alishahrokhi.SalavatCounter.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		8C0BF1BC252E08CC00225782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 887F78F523;
+				INFOPLIST_FILE = "SalavatCounter WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.alishahrokhi.SalavatCounter.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		8C0BF1BF252E08CC00225782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 887F78F523;
+				IBSC_MODULE = SalavatCounter_WatchKit_Extension;
+				INFOPLIST_FILE = "SalavatCounter WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = dev.alishahrokhi.SalavatCounter.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		8C0BF1C0252E08CC00225782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 887F78F523;
+				IBSC_MODULE = SalavatCounter_WatchKit_Extension;
+				INFOPLIST_FILE = "SalavatCounter WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = dev.alishahrokhi.SalavatCounter.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		8C0BF1C3252E08CC00225782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 887F78F523;
+				INFOPLIST_FILE = SalavatCounter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.alishahrokhi.SalavatCounter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8C0BF1C4252E08CC00225782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 887F78F523;
+				INFOPLIST_FILE = SalavatCounter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.alishahrokhi.SalavatCounter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C0BF17F252E08C800225782 /* Build configuration list for PBXProject "SalavatCounter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C0BF1B8252E08CC00225782 /* Debug */,
+				8C0BF1B9252E08CC00225782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C0BF1BA252E08CC00225782 /* Build configuration list for PBXNativeTarget "SalavatCounter WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C0BF1BB252E08CC00225782 /* Debug */,
+				8C0BF1BC252E08CC00225782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C0BF1BE252E08CC00225782 /* Build configuration list for PBXNativeTarget "SalavatCounter WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C0BF1BF252E08CC00225782 /* Debug */,
+				8C0BF1C0252E08CC00225782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C0BF1C2252E08CC00225782 /* Build configuration list for PBXNativeTarget "SalavatCounter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C0BF1C3252E08CC00225782 /* Debug */,
+				8C0BF1C4252E08CC00225782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8C0BF17C252E08C800225782 /* Project object */;
+}
