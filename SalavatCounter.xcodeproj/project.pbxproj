@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7FA541F2AB030D093E092878 /* Pods_SalavatCounter_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57A74EF226DE82E89AED4D13 /* Pods_SalavatCounter_WatchKit_Extension.framework */; };
+		80D4A0EAD665521E5D9C9FED /* Pods_SalavatCounter_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2808011DADF294EDCBB74CF6 /* Pods_SalavatCounter_WatchKit_App.framework */; };
 		8C0BF188252E08C800225782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0BF187252E08C800225782 /* AppDelegate.swift */; };
 		8C0BF18A252E08C800225782 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0BF189252E08C800225782 /* SceneDelegate.swift */; };
 		8C0BF18C252E08C800225782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0BF18B252E08C800225782 /* ViewController.swift */; };
@@ -22,6 +24,9 @@
 		8C0BF1B1252E08CB00225782 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0BF1B0252E08CB00225782 /* NotificationController.swift */; };
 		8C0BF1B3252E08CB00225782 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0BF1B2252E08CB00225782 /* ComplicationController.swift */; };
 		8C0BF1B5252E08CC00225782 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C0BF1B4252E08CC00225782 /* Assets.xcassets */; };
+		8C398E34252E206C00B3A8B0 /* Helpers in Resources */ = {isa = PBXBuildFile; fileRef = 8C398E33252E206C00B3A8B0 /* Helpers */; };
+		8CF0A61A252F25B600D4433B /* Pods_SalavatCounter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8369122B160A446624DA4356 /* Pods_SalavatCounter.framework */; };
+		8CF0A61B252F25B600D4433B /* Pods_SalavatCounter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8369122B160A446624DA4356 /* Pods_SalavatCounter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,18 +60,37 @@
 		};
 		8C0BF1C1252E08CC00225782 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
 				8C0BF199252E08CA00225782 /* SalavatCounter WatchKit App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		8CF0A61C252F25B600D4433B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8CF0A61B252F25B600D4433B /* Pods_SalavatCounter.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		10FCBF49482CB927FB14E9B1 /* Pods-SalavatCounter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalavatCounter.release.xcconfig"; path = "Target Support Files/Pods-SalavatCounter/Pods-SalavatCounter.release.xcconfig"; sourceTree = "<group>"; };
+		14773B3BD5DA7DCC4990AB2A /* Pods-SalavatCounter WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalavatCounter WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-SalavatCounter WatchKit App/Pods-SalavatCounter WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		1E017C630E8F8DE3B7B8A8EA /* Pods-SalavatCounter WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalavatCounter WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-SalavatCounter WatchKit Extension/Pods-SalavatCounter WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		2808011DADF294EDCBB74CF6 /* Pods_SalavatCounter_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SalavatCounter_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AA74DCD0498EA1C8DAAF1F2 /* Pods-SalavatCounter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalavatCounter.debug.xcconfig"; path = "Target Support Files/Pods-SalavatCounter/Pods-SalavatCounter.debug.xcconfig"; sourceTree = "<group>"; };
+		3DAFE2EEFC5D6E6C52C8405F /* Pods-SalavatCounter WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalavatCounter WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-SalavatCounter WatchKit Extension/Pods-SalavatCounter WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		57A74EF226DE82E89AED4D13 /* Pods_SalavatCounter_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SalavatCounter_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8369122B160A446624DA4356 /* Pods_SalavatCounter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SalavatCounter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C0BF184252E08C800225782 /* SalavatCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SalavatCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C0BF187252E08C800225782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C0BF189252E08C800225782 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,13 +111,24 @@
 		8C0BF1B4252E08CC00225782 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C0BF1B6252E08CC00225782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C0BF1B7252E08CC00225782 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		8C398E33252E206C00B3A8B0 /* Helpers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Helpers; sourceTree = "<group>"; };
+		F29ED5BCF2647EF09EA088D2 /* Pods-SalavatCounter WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalavatCounter WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-SalavatCounter WatchKit App/Pods-SalavatCounter WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		557C99DA67BEE63750A0BC8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80D4A0EAD665521E5D9C9FED /* Pods_SalavatCounter_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8C0BF181252E08C800225782 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CF0A61A252F25B600D4433B /* Pods_SalavatCounter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,12 +136,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FA541F2AB030D093E092878 /* Pods_SalavatCounter_WatchKit_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15D4DC777CAB2E0AD8DA07FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8369122B160A446624DA4356 /* Pods_SalavatCounter.framework */,
+				2808011DADF294EDCBB74CF6 /* Pods_SalavatCounter_WatchKit_App.framework */,
+				57A74EF226DE82E89AED4D13 /* Pods_SalavatCounter_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D510522A89446A979A8DF11 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2AA74DCD0498EA1C8DAAF1F2 /* Pods-SalavatCounter.debug.xcconfig */,
+				10FCBF49482CB927FB14E9B1 /* Pods-SalavatCounter.release.xcconfig */,
+				14773B3BD5DA7DCC4990AB2A /* Pods-SalavatCounter WatchKit App.debug.xcconfig */,
+				F29ED5BCF2647EF09EA088D2 /* Pods-SalavatCounter WatchKit App.release.xcconfig */,
+				3DAFE2EEFC5D6E6C52C8405F /* Pods-SalavatCounter WatchKit Extension.debug.xcconfig */,
+				1E017C630E8F8DE3B7B8A8EA /* Pods-SalavatCounter WatchKit Extension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8C0BF17B252E08C800225782 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +173,8 @@
 				8C0BF19C252E08CA00225782 /* SalavatCounter WatchKit App */,
 				8C0BF1AB252E08CB00225782 /* SalavatCounter WatchKit Extension */,
 				8C0BF185252E08C800225782 /* Products */,
+				7D510522A89446A979A8DF11 /* Pods */,
+				15D4DC777CAB2E0AD8DA07FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +191,7 @@
 		8C0BF186252E08C800225782 /* SalavatCounter */ = {
 			isa = PBXGroup;
 			children = (
+				8C398E33252E206C00B3A8B0 /* Helpers */,
 				8C0BF187252E08C800225782 /* AppDelegate.swift */,
 				8C0BF189252E08C800225782 /* SceneDelegate.swift */,
 				8C0BF18B252E08C800225782 /* ViewController.swift */,
@@ -172,10 +234,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8C0BF1C2252E08CC00225782 /* Build configuration list for PBXNativeTarget "SalavatCounter" */;
 			buildPhases = (
+				B992E097F2E1EFB3ED4135D1 /* [CP] Check Pods Manifest.lock */,
 				8C0BF180252E08C800225782 /* Sources */,
 				8C0BF181252E08C800225782 /* Frameworks */,
 				8C0BF182252E08C800225782 /* Resources */,
 				8C0BF1C1252E08CC00225782 /* Embed Watch Content */,
+				9A0B87AF84959120A7A95A5D /* [CP] Embed Pods Frameworks */,
+				8CF0A61C252F25B600D4433B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -191,8 +256,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8C0BF1BE252E08CC00225782 /* Build configuration list for PBXNativeTarget "SalavatCounter WatchKit App" */;
 			buildPhases = (
+				88C0738739122BA85BA45C32 /* [CP] Check Pods Manifest.lock */,
 				8C0BF196252E08CA00225782 /* Resources */,
 				8C0BF1BD252E08CC00225782 /* Embed App Extensions */,
+				557C99DA67BEE63750A0BC8E /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -208,6 +275,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8C0BF1BA252E08CC00225782 /* Build configuration list for PBXNativeTarget "SalavatCounter WatchKit Extension" */;
 			buildPhases = (
+				AD2847CA9D75B9793E29114B /* [CP] Check Pods Manifest.lock */,
 				8C0BF1A3252E08CB00225782 /* Sources */,
 				8C0BF1A4252E08CB00225782 /* Frameworks */,
 				8C0BF1A5252E08CB00225782 /* Resources */,
@@ -268,6 +336,7 @@
 			files = (
 				8C0BF194252E08CA00225782 /* LaunchScreen.storyboard in Resources */,
 				8C0BF191252E08CA00225782 /* Assets.xcassets in Resources */,
+				8C398E34252E206C00B3A8B0 /* Helpers in Resources */,
 				8C0BF18F252E08C800225782 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,6 +359,92 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		88C0738739122BA85BA45C32 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SalavatCounter WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A0B87AF84959120A7A95A5D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SalavatCounter/Pods-SalavatCounter-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SalavatCounter/Pods-SalavatCounter-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SalavatCounter/Pods-SalavatCounter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD2847CA9D75B9793E29114B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SalavatCounter WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B992E097F2E1EFB3ED4135D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SalavatCounter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8C0BF180252E08C800225782 /* Sources */ = {
@@ -389,6 +544,8 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mohammad Najafi (DS5G8L32X4)";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -407,6 +564,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -448,6 +606,8 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mohammad Najafi (DS5G8L32X4)";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -460,6 +620,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -469,18 +630,23 @@
 		};
 		8C0BF1BB252E08CC00225782 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DAFE2EEFC5D6E6C52C8405F /* Pods-SalavatCounter WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 887F78F523;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = A56QU79AZ6;
 				INFOPLIST_FILE = "SalavatCounter WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.alishahrokhi.SalavatCounter.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = Wildcard_Dev;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -491,18 +657,23 @@
 		};
 		8C0BF1BC252E08CC00225782 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E017C630E8F8DE3B7B8A8EA /* Pods-SalavatCounter WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 887F78F523;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = A56QU79AZ6;
 				INFOPLIST_FILE = "SalavatCounter WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.alishahrokhi.SalavatCounter.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = Wildcard_Dev;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -514,16 +685,21 @@
 		};
 		8C0BF1BF252E08CC00225782 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14773B3BD5DA7DCC4990AB2A /* Pods-SalavatCounter WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 887F78F523;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = A56QU79AZ6;
 				IBSC_MODULE = SalavatCounter_WatchKit_Extension;
 				INFOPLIST_FILE = "SalavatCounter WatchKit App/Info.plist";
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.alishahrokhi.SalavatCounter.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = Wildcard_Dev;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -534,16 +710,21 @@
 		};
 		8C0BF1C0252E08CC00225782 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F29ED5BCF2647EF09EA088D2 /* Pods-SalavatCounter WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 887F78F523;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = A56QU79AZ6;
 				IBSC_MODULE = SalavatCounter_WatchKit_Extension;
 				INFOPLIST_FILE = "SalavatCounter WatchKit App/Info.plist";
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.alishahrokhi.SalavatCounter.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = Wildcard_Dev;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -555,43 +736,53 @@
 		};
 		8C0BF1C3252E08CC00225782 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AA74DCD0498EA1C8DAAF1F2 /* Pods-SalavatCounter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 887F78F523;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = A56QU79AZ6;
 				INFOPLIST_FILE = SalavatCounter/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.alishahrokhi.SalavatCounter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = Wildcard_Dev;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		8C0BF1C4252E08CC00225782 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10FCBF49482CB927FB14E9B1 /* Pods-SalavatCounter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 887F78F523;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = A56QU79AZ6;
 				INFOPLIST_FILE = SalavatCounter/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.alishahrokhi.SalavatCounter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = Wildcard_Dev;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

@@ -1,0 +1,20 @@
+PODS:
+  - MBCircularProgressBar (0.3.5)
+  - SibcheStoreKit (4.1.2)
+
+DEPENDENCIES:
+  - MBCircularProgressBar
+  - SibcheStoreKit (~> 4.1)
+
+SPEC REPOS:
+  trunk:
+    - MBCircularProgressBar
+    - SibcheStoreKit
+
+SPEC CHECKSUMS:
+  MBCircularProgressBar: 0b795b722a5eb5b0923822f90474e2576a1a7855
+  SibcheStoreKit: d9c77132326bbc8fe6e2f621344a94969d6fe552
+
+PODFILE CHECKSUM: c74437f2f43227d80f358b314cba22e434a283b1
+
+COCOAPODS: 1.9.1

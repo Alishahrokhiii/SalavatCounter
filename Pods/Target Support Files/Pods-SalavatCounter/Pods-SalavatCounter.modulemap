@@ -1,0 +1,6 @@
+framework module Pods_SalavatCounter {
+  umbrella header "Pods-SalavatCounter-umbrella.h"
+
+  export *
+  module * { export * }
+}
