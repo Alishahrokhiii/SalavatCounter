@@ -7,16 +7,17 @@
 
 import UIKit
 import SibcheStoreKit
+import IQKeyboardManagerSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         SibcheStoreKit.initWithApiKey("Wewg8E2nl9DmJNOAZVxQkGqYrRVXMZ", withScheme: "SlvtApp")
-        
+        IQKeyboardManager.shared.enable = true
         
         return true
     }

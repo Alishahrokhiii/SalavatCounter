@@ -26,11 +26,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         let Counter = defaults.integer(forKey: "Count")
+        Count = defaults.integer(forKey: "Count")
         CircularProgressBarView.value = CGFloat(Counter)
         
         
     }
     @IBAction func CountTapped(_ sender: Any) {
+        
         Count += 1
         CircularProgressBarView.value = CGFloat(Count)
         defaults.set(Count, forKey: "Count")
@@ -43,7 +45,13 @@ class ViewController: UIViewController {
     @IBAction func SetTargetTapped(_ sender: Any) {
         targeted = Int(TargetTextField.text!) ?? 100
         TargetLable.text = TargetTextField.text
-        
+        if let n = NumberFormatter().number(from: TargetTextField.text ?? "100") {
+            let f = CGFloat(truncating: n)
+            CircularProgressBarView.maxValue = f
+        }
+        CircularProgressBarView.reloadInputViews()
+        CircularProgressBarView.value = CGFloat(Count + 1)
+        CircularProgressBarView.value = CGFloat(Count - 1)
     }
     
 

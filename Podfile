@@ -8,6 +8,7 @@ target 'SalavatCounter' do
   # Pods for SalavatCounter
 	pod "MBCircularProgressBar"
         pod 'SibcheStoreKit', '~> 4.1'
+	pod 'IQKeyboardManagerSwift'
 
 end
 

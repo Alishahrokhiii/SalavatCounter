@@ -1,20 +1,24 @@
 PODS:
+  - IQKeyboardManagerSwift (6.5.6)
   - MBCircularProgressBar (0.3.5)
   - SibcheStoreKit (4.1.2)
 
 DEPENDENCIES:
+  - IQKeyboardManagerSwift
   - MBCircularProgressBar
   - SibcheStoreKit (~> 4.1)
 
 SPEC REPOS:
   trunk:
+    - IQKeyboardManagerSwift
     - MBCircularProgressBar
     - SibcheStoreKit
 
 SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
   MBCircularProgressBar: 0b795b722a5eb5b0923822f90474e2576a1a7855
   SibcheStoreKit: d9c77132326bbc8fe6e2f621344a94969d6fe552
 
-PODFILE CHECKSUM: c74437f2f43227d80f358b314cba22e434a283b1
+PODFILE CHECKSUM: 322b7823574afd97948ae556cb83033150f317eb
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.10.0.rc.1
