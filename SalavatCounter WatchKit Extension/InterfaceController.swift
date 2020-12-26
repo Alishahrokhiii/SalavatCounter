@@ -28,15 +28,13 @@ class InterfaceController: WKInterfaceController {
         CounterLable.setText(String(Count))
         defaults.set(Count, forKey: "Count")
     }
-    
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         let Counter = defaults.integer(forKey: "Count")
         CounterLable.setText(String(Counter))
+        
     }
-    
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
     }
-
 }

@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7FA541F2AB030D093E092878 /* Pods_SalavatCounter_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57A74EF226DE82E89AED4D13 /* Pods_SalavatCounter_WatchKit_Extension.framework */; };
-		80D4A0EAD665521E5D9C9FED /* Pods_SalavatCounter_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2808011DADF294EDCBB74CF6 /* Pods_SalavatCounter_WatchKit_App.framework */; };
 		8C0BF188252E08C800225782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0BF187252E08C800225782 /* AppDelegate.swift */; };
 		8C0BF18A252E08C800225782 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0BF189252E08C800225782 /* SceneDelegate.swift */; };
 		8C0BF18C252E08C800225782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0BF18B252E08C800225782 /* ViewController.swift */; };
@@ -25,6 +23,10 @@
 		8C0BF1B3252E08CB00225782 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0BF1B2252E08CB00225782 /* ComplicationController.swift */; };
 		8C0BF1B5252E08CC00225782 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C0BF1B4252E08CC00225782 /* Assets.xcassets */; };
 		8C398E34252E206C00B3A8B0 /* Helpers in Resources */ = {isa = PBXBuildFile; fileRef = 8C398E33252E206C00B3A8B0 /* Helpers */; };
+		8C39C565258A6FD80026F60E /* Pods_SalavatCounter_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57A74EF226DE82E89AED4D13 /* Pods_SalavatCounter_WatchKit_Extension.framework */; };
+		8C39C566258A6FD80026F60E /* Pods_SalavatCounter_WatchKit_Extension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 57A74EF226DE82E89AED4D13 /* Pods_SalavatCounter_WatchKit_Extension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8C39C56A258A709D0026F60E /* Pods_SalavatCounter_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2808011DADF294EDCBB74CF6 /* Pods_SalavatCounter_WatchKit_App.framework */; };
+		8C39C56B258A709D0026F60E /* Pods_SalavatCounter_WatchKit_App.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2808011DADF294EDCBB74CF6 /* Pods_SalavatCounter_WatchKit_App.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8CF0A61A252F25B600D4433B /* Pods_SalavatCounter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8369122B160A446624DA4356 /* Pods_SalavatCounter.framework */; };
 		8CF0A61B252F25B600D4433B /* Pods_SalavatCounter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8369122B160A446624DA4356 /* Pods_SalavatCounter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -68,6 +70,28 @@
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 1;
+		};
+		8C39C567258A6FD80026F60E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8C39C566258A6FD80026F60E /* Pods_SalavatCounter_WatchKit_Extension.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C39C56C258A709D0026F60E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8C39C56B258A709D0026F60E /* Pods_SalavatCounter_WatchKit_App.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 		8CF0A61C252F25B600D4433B /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -120,7 +144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80D4A0EAD665521E5D9C9FED /* Pods_SalavatCounter_WatchKit_App.framework in Frameworks */,
+				8C39C56A258A709D0026F60E /* Pods_SalavatCounter_WatchKit_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +160,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FA541F2AB030D093E092878 /* Pods_SalavatCounter_WatchKit_Extension.framework in Frameworks */,
+				8C39C565258A6FD80026F60E /* Pods_SalavatCounter_WatchKit_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +284,7 @@
 				8C0BF196252E08CA00225782 /* Resources */,
 				8C0BF1BD252E08CC00225782 /* Embed App Extensions */,
 				557C99DA67BEE63750A0BC8E /* Frameworks */,
+				8C39C56C258A709D0026F60E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -279,6 +304,7 @@
 				8C0BF1A3252E08CB00225782 /* Sources */,
 				8C0BF1A4252E08CB00225782 /* Frameworks */,
 				8C0BF1A5252E08CB00225782 /* Resources */,
+				8C39C567258A6FD80026F60E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -633,10 +659,10 @@
 			baseConfigurationReference = 3DAFE2EEFC5D6E6C52C8405F /* Pods-SalavatCounter WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = A56QU79AZ6;
+				DEVELOPMENT_TEAM = 887F78F523;
 				INFOPLIST_FILE = "SalavatCounter WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -646,7 +672,7 @@
 				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.alishahrokhi.SalavatCounter.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE_SPECIFIER = Wildcard_Dev;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -660,10 +686,10 @@
 			baseConfigurationReference = 1E017C630E8F8DE3B7B8A8EA /* Pods-SalavatCounter WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = A56QU79AZ6;
+				DEVELOPMENT_TEAM = 887F78F523;
 				INFOPLIST_FILE = "SalavatCounter WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -673,7 +699,7 @@
 				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.alishahrokhi.SalavatCounter.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE_SPECIFIER = Wildcard_Dev;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -690,16 +716,20 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = A56QU79AZ6;
+				DEVELOPMENT_TEAM = 887F78F523;
 				IBSC_MODULE = SalavatCounter_WatchKit_Extension;
 				INFOPLIST_FILE = "SalavatCounter WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.alishahrokhi.SalavatCounter.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = Wildcard_Dev;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -715,16 +745,20 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = A56QU79AZ6;
+				DEVELOPMENT_TEAM = 887F78F523;
 				IBSC_MODULE = SalavatCounter_WatchKit_Extension;
 				INFOPLIST_FILE = "SalavatCounter WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.alishahrokhi.SalavatCounter.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = Wildcard_Dev;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -740,10 +774,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = A56QU79AZ6;
+				DEVELOPMENT_TEAM = 887F78F523;
 				INFOPLIST_FILE = SalavatCounter/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -753,7 +787,7 @@
 				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.alishahrokhi.SalavatCounter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = Wildcard_Dev;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -766,10 +800,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = A56QU79AZ6;
+				DEVELOPMENT_TEAM = 887F78F523;
 				INFOPLIST_FILE = SalavatCounter/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -779,7 +813,7 @@
 				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.alishahrokhi.SalavatCounter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = Wildcard_Dev;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
